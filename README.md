@@ -22,11 +22,39 @@ Data set file used in this project is data/earthquakes.csv"
 
 ## Installation
 
-TO DO
+This project uses Python 3.12, 3.13, or 3.14 and was developed using Python 3.14. The following Python packages are required:
+-Pandas: used to read and organize the earthquake CSV data.
+-NumPy: used for numerical calculations.
+-Matplotlib: used to create the earthquake visualizations.
+-Pytest: used for testing.
+-Jupyter: used to run the main Jupyter Notebook.
+-Ipykernel: used to run the main Jupyter Notebook.
+
+**Installing the packages**:
+1. Open a terminal in the project directory and run the following command:
+python -m pip install pandas numpy matplotlib pytest jupyter ipykernel
+
+If the machine uses the py command, the following can be used:
+py -m pip install pandas numpy matplotlib pytest jupyter ipykernel
+
+The main program is main.ipynb. When opening main.ipynb in VS Code, select a Python 3.12, 3.13, or 3.14 krnel that has the required packages installed.
 
 ## How to Run 
 
-TO DO
+The main program is main.ipynb.
+
+To run the project in VS Code:
+1. Open the project folder in VS Code.
+2. Open main.ipynb in Jupyter Notebook.
+3. Select the Python 3.12, 3.13, or 3.13 Jupyter kernel.
+4. Make sure the required packages have been installed using the installation command above and the dataset is located at data/earthquakes.csv.
+5. Run the cells in main.ipynb. The notebook shall load the dataset, create the earthquake objects, perform the analysis, generate the risk report, and create the visualization files.
+6. The generated files will be saved in outputs/.
+
+The Jupyter notebook connects the project modules and performs the complete analysis. It loads the earthquake data, creates Earthquake objects, adds the objects to an EarthquakeAnalyzer, performs the analysis, generates the risk report, and creates the visualizations.
+
+The project also includes main.py, which can be run from the project directory using the following commands:
+python main.py OR py main.py.
 
 ## Project Structure
 
@@ -65,11 +93,30 @@ The relationship between these classes is based on composition because an Earthq
 
 ## Testing
 
-Pytest test cases validate that Earthquake objects are created correctly and that EarthquakeAnalyzer accurately calculates statistics such as average magnitude, strongest earthquake, and number of high-risk events.
-
-TO DO
+The project includes Pytest test files for the earthquake class, data loader, and analyzer. The tests cover areas including:
+-Creating Earthquake objects.
+-Comparing earthquake objects.
+-Testing the string representation of an earthquake.
+-Handling a missing dataset file.
+-Loading a valid earthquake record.
+-Handling missing data.
+-Testing the earthquake record generator.
+-Calculating average magnitude.
+-Finding the strongest earthquake.
+-Filtering earthquakes by magnitude.
+-Analyzing earthquake frequency.
+-Generating the risk report.
 
 
 ## Output
 
 Output files include a CSV summary report and PNG chart files saved to an outputs/ folder.
+
+
+## Team Contributions
+
+Kalpana P:
+
+Rachel Balji:
+
+Tim Clancy:
