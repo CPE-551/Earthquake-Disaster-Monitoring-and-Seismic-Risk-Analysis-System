@@ -18,7 +18,7 @@ The application will load and validate USGS earthquake data, represent events us
 
 Uses the publicly available USGS Earthquake Hazards Program Earthquake Catalog dataset, which contains information such as earthquake magnitude, location, geographic coordinates, depth, and occurrence time.
 
-Data set file used in this project is data/earthquakes.csv"
+Data set file used in this project is data/earthquakes.csv
 
 ## Installation
 
@@ -46,7 +46,7 @@ The main program is main.ipynb.
 To run the project in VS Code:
 1. Open the project folder in VS Code.
 2. Open main.ipynb in Jupyter Notebook.
-3. Select the Python 3.12, 3.13, or 3.13 Jupyter kernel.
+3. Select the Python 3.12, 3.13, or 3.14 Jupyter kernel.
 4. Make sure the required packages have been installed using the installation command above and the dataset is located at data/earthquakes.csv.
 5. Run the cells in main.ipynb. The notebook shall load the dataset, create the earthquake objects, perform the analysis, generate the risk report, and create the visualization files.
 6. The generated files will be saved in outputs/.
@@ -59,7 +59,7 @@ python main.py OR py main.py.
 ## Project Structure
 
 - **earthquake.py** — This module defines the Earthquake class, which represents a single earthquake event obtained from the United States Geological Survey (USGS) Earthquake Catalog.
-- **analyzer.py** — This module contains the EarthquakeAnalyzer class. The class manages multiple Earthquake objects and performs seismic data analysis.
+- **earthquake_analyzer.py** — This module contains the EarthquakeAnalyzer class. The class manages multiple Earthquake objects and performs seismic data analysis.
 - **data_loader.py** — This module loads earthquake records from a USGS Earthquake Catalog CSV dataset. It validates the required columns and important data fields, converts valid records into Earthquake objects, and returns them as a list.
 - **report.py** — This module provides functionality for exporting earthquake risk analysis results to a CSV file.
 - **visualization.py** — This module provides visualization functions for earthquake analysis. Matplotlib is used to create graphical representations of earthquake activity, including magnitude distributions, earthquake frequency trends, and relationships between earthquake depth and magnitude.
@@ -108,6 +108,14 @@ The project includes Pytest test files for the earthquake class, data loader, an
 -Generating the risk report.
 
 
+To run all tests from the Project Directory:
+
+```bash
+pytest test_data_loader.py -v
+pytest test_analyzer -v
+pytest test_earthquake.py -v
+```
+
 ## Output
 
 Output files include a CSV summary report and PNG chart files saved to an outputs/ folder.
@@ -115,8 +123,15 @@ Output files include a CSV summary report and PNG chart files saved to an output
 
 ## Team Contributions
 
-Kalpana P:
+### Kalpana P:
+- Implemented: `earthquake.py`, `earthquakeanalyzer.py`, `visualization.py`, and `test_analyzer`.
+- Refactored or updated: `data_loader.py`, `report.py` (formerly dataprocessing.py)
+- Added: earthquake base classes, input validation, analysis functions, visualizations, and unit tests.
+- Documented: module, class, and function docstrings; added or updated code comments.
 
-Rachel Balji:
+### Rachel Balji:
 
-Tim Clancy:
+### Tim Clancy:
+- Implemented and/or Updated []
+- Added: [tests, validation, visualizations]
+- Documented
