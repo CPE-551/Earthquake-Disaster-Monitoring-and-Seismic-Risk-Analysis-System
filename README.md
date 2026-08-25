@@ -136,6 +136,6 @@ Output files include a CSV summary report and PNG chart files saved to an output
 
 ### Tim Clancy:
 - Implemented [`test_data_loader.py`, `test_earthquake.py`]
-- Refactored or updated: `visualization.py`, `main.py`, README
+- Refactored or updated: `visualization.py`, `main.py`, `test_analyzer.py`, README
 - Added: test cases for earthquake and data loader, visualizations
 - Documented: module, class, and function docstrings; added or updated code comments.
