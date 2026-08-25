@@ -130,9 +130,9 @@ Output files include a CSV summary report and PNG chart files saved to an output
 - Documented: module, class, and function docstrings; added or updated code comments.
 
 ### Rachel Balji:
--Implemented: dataprocessing.py (load_earthquake_data and export_risk_report) and main.ipynb
--Updated: dataloader.py (added iter_earthquake_records), README.md
--Added: dataset processing functions, generator for individual dataset processing
+- Implemented: dataprocessing.py (load_earthquake_data and export_risk_report) and main.ipynb
+- Updated: dataloader.py (added iter_earthquake_records), README.md
+- Added: dataset processing functions, generator for individual dataset processing
 
 ### Tim Clancy:
 - Implemented [`test_data_loader.py`, `test_earthquake.py`]
