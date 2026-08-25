@@ -1,4 +1,4 @@
-#tests/test_earthquake.py
+#test_earthquake.py
 """
 
 File: test_analyzer.py
