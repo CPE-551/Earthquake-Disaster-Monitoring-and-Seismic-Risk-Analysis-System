@@ -135,6 +135,7 @@ Output files include a CSV summary report and PNG chart files saved to an output
 -Added: dataset processing functions, generator for individual dataset processing
 
 ### Tim Clancy:
-- Implemented and/or Updated []
-- Added: [tests, validation, visualizations]
-- Documented
+- Implemented [`test_data_loader.py`, `test_earthquake.py`]
+- Refactored or updated: `visualization.py`, `main.py`, README
+- Added: test cases for earthquake and data loader, visualizations
+- Documented: module, class, and function docstrings; added or updated code comments.
